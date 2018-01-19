@@ -24,10 +24,13 @@ class DownloadManager {
     func downloadFile(url: URL, completeHandler: @escaping ((Bool) -> ())) {
         Alamofire.download(url, to: destination).response { (response) in
             if response.error != nil {
-                 completeHandler(false)
+                completeHandler(false)
             } else {
-                  completeHandler(true)
+                completeHandler(true)
             }
         }
+    }
+    
+    func dowloadVideo(urlVideo: URL, completeHandler: ()->() ) {
     }
 }

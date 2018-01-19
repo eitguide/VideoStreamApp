@@ -120,11 +120,12 @@ extension ViewController: DownloadStreamDidTapDelegate {
         print(stream.streamUrl)
         print(stream.offlineUrl)
         
-        DownloadManager.shared.downloadFile(url: URL(string: stream.offlineUrl!)!) { (value) in
+        DownloadManager.shared.downloadFile(url: URL(string: stream.backgroundImageUrl!)!) { (value) in
             print("NghiaNV-\(value)")
         }
       
         tabBarController?.selectedIndex = 1
     }
 }
+
 
