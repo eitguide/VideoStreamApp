@@ -1,0 +1,6 @@
+framework module Pods_VideoStreamingApp {
+  umbrella header "Pods-VideoStreamingApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

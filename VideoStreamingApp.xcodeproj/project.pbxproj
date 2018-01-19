@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE3C35DE200D916D00CE26F2 /* Spout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C35DD200D916D00CE26F2 /* Spout.swift */; };
+		BE3C35E0200D94E800CE26F2 /* SpoutAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C35DF200D94E800CE26F2 /* SpoutAPIProvider.swift */; };
+		BE3C35E2200D9F5600CE26F2 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C35E1200D9F5600CE26F2 /* Navigator.swift */; };
+		BE3C35E4200D9FF700CE26F2 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C35E3200D9FF700CE26F2 /* PlayViewController.swift */; };
+		BE3C35E6200DA09800CE26F2 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3C35E5200DA09800CE26F2 /* ErrorViewController.swift */; };
+		BE42089D2010FDE100550EBC /* CMTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42089C2010FDE100550EBC /* CMTime.swift */; };
+		BE4208A02011754500550EBC /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42089F2011754500550EBC /* DownloadManager.swift */; };
+		BE4208A2201178C500550EBC /* DownloadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4208A1201178C500550EBC /* DownloadViewModel.swift */; };
+		BE4208A420117C7E00550EBC /* DownloadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4208A320117C7E00550EBC /* DownloadCell.swift */; };
+		BEAB897F200D7B9A0058B120 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB897E200D7B9A0058B120 /* AppDelegate.swift */; };
+		BEAB8981200D7B9A0058B120 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB8980200D7B9A0058B120 /* ViewController.swift */; };
+		BEAB8987200D7B9A0058B120 /* VideoStreamingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEAB8985200D7B9A0058B120 /* VideoStreamingApp.xcdatamodeld */; };
+		BEAB8989200D7B9A0058B120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAB8988200D7B9A0058B120 /* Assets.xcassets */; };
+		BEAB898C200D7B9A0058B120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEAB898A200D7B9A0058B120 /* LaunchScreen.storyboard */; };
+		BEAB8995200D7D770058B120 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB8994200D7D770058B120 /* Stream.swift */; };
+		BEAB8998200D82720058B120 /* StreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB8997200D82720058B120 /* StreamCell.swift */; };
+		BEAB899B200D841E0058B120 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB899A200D841E0058B120 /* UIColor.swift */; };
+		BEAB89A1200D84ED0058B120 /* StreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB89A0200D84ED0058B120 /* StreamViewModel.swift */; };
+		BEBEC428200FB1BC005E1012 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEC427200FB1BC005E1012 /* DownloadViewController.swift */; };
+		BEBEC42A20101A2B005E1012 /* PlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEC42920101A2B005E1012 /* PlayViewModel.swift */; };
+		BEBEC42C20101F6A005E1012 /* AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBEC42B20101F6A005E1012 /* AVPlayer.swift */; };
+		D5E4430D79ECF11CDE3E9AC8 /* Pods_VideoStreamingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C570763D3AF5472850F19B /* Pods_VideoStreamingApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17C570763D3AF5472850F19B /* Pods_VideoStreamingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoStreamingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		817BC223DF3C66F9A9C7828A /* Pods-VideoStreamingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoStreamingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoStreamingApp/Pods-VideoStreamingApp.release.xcconfig"; sourceTree = "<group>"; };
+		93FF68116C013B65DBFD50D2 /* Pods-VideoStreamingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoStreamingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoStreamingApp/Pods-VideoStreamingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BE3C35DD200D916D00CE26F2 /* Spout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spout.swift; sourceTree = "<group>"; };
+		BE3C35DF200D94E800CE26F2 /* SpoutAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoutAPIProvider.swift; sourceTree = "<group>"; };
+		BE3C35E1200D9F5600CE26F2 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		BE3C35E3200D9FF700CE26F2 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		BE3C35E5200DA09800CE26F2 /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		BE42089C2010FDE100550EBC /* CMTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMTime.swift; sourceTree = "<group>"; };
+		BE42089F2011754500550EBC /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		BE4208A1201178C500550EBC /* DownloadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewModel.swift; sourceTree = "<group>"; };
+		BE4208A320117C7E00550EBC /* DownloadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadCell.swift; sourceTree = "<group>"; };
+		BEAB897B200D7B9A0058B120 /* VideoStreamingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoStreamingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEAB897E200D7B9A0058B120 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEAB8980200D7B9A0058B120 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEAB8986200D7B9A0058B120 /* VideoStreamingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VideoStreamingApp.xcdatamodel; sourceTree = "<group>"; };
+		BEAB8988200D7B9A0058B120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEAB898B200D7B9A0058B120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEAB898D200D7B9A0058B120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEAB8994200D7D770058B120 /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		BEAB8997200D82720058B120 /* StreamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCell.swift; sourceTree = "<group>"; };
+		BEAB899A200D841E0058B120 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		BEAB89A0200D84ED0058B120 /* StreamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewModel.swift; sourceTree = "<group>"; };
+		BEBEC427200FB1BC005E1012 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		BEBEC42920101A2B005E1012 /* PlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewModel.swift; sourceTree = "<group>"; };
+		BEBEC42B20101F6A005E1012 /* AVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEAB8978200D7B9A0058B120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E4430D79ECF11CDE3E9AC8 /* Pods_VideoStreamingApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		157D1029CA558A55488636DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93FF68116C013B65DBFD50D2 /* Pods-VideoStreamingApp.debug.xcconfig */,
+				817BC223DF3C66F9A9C7828A /* Pods-VideoStreamingApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1D6A2A4A954DE7192BEF2BB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17C570763D3AF5472850F19B /* Pods_VideoStreamingApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE42089E2011753700550EBC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BE42089F2011754500550EBC /* DownloadManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BEAB8972200D7B9A0058B120 = {
+			isa = PBXGroup;
+			children = (
+				BEAB897D200D7B9A0058B120 /* VideoStreamingApp */,
+				BEAB897C200D7B9A0058B120 /* Products */,
+				157D1029CA558A55488636DA /* Pods */,
+				1D6A2A4A954DE7192BEF2BB1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BEAB897C200D7B9A0058B120 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEAB897B200D7B9A0058B120 /* VideoStreamingApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEAB897D200D7B9A0058B120 /* VideoStreamingApp */ = {
+			isa = PBXGroup;
+			children = (
+				BE42089E2011753700550EBC /* Manager */,
+				BEAB899F200D84DD0058B120 /* ViewModel */,
+				BEAB899C200D84250058B120 /* API */,
+				BEAB8999200D840C0058B120 /* Extension */,
+				BEAB8996200D80E00058B120 /* View */,
+				BEAB8993200D7D680058B120 /* Model */,
+				BEAB897E200D7B9A0058B120 /* AppDelegate.swift */,
+				BEAB8988200D7B9A0058B120 /* Assets.xcassets */,
+				BEAB898A200D7B9A0058B120 /* LaunchScreen.storyboard */,
+				BEAB898D200D7B9A0058B120 /* Info.plist */,
+				BEAB8985200D7B9A0058B120 /* VideoStreamingApp.xcdatamodeld */,
+				BE3C35E1200D9F5600CE26F2 /* Navigator.swift */,
+			);
+			path = VideoStreamingApp;
+			sourceTree = "<group>";
+		};
+		BEAB8993200D7D680058B120 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEAB8994200D7D770058B120 /* Stream.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEAB8996200D80E00058B120 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE3C35E5200DA09800CE26F2 /* ErrorViewController.swift */,
+				BEBEC427200FB1BC005E1012 /* DownloadViewController.swift */,
+				BE3C35E3200D9FF700CE26F2 /* PlayViewController.swift */,
+				BEAB8980200D7B9A0058B120 /* ViewController.swift */,
+				BEAB8997200D82720058B120 /* StreamCell.swift */,
+				BE4208A320117C7E00550EBC /* DownloadCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BEAB8999200D840C0058B120 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BEAB899A200D841E0058B120 /* UIColor.swift */,
+				BEBEC42B20101F6A005E1012 /* AVPlayer.swift */,
+				BE42089C2010FDE100550EBC /* CMTime.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BEAB899C200D84250058B120 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BE3C35DD200D916D00CE26F2 /* Spout.swift */,
+				BE3C35DF200D94E800CE26F2 /* SpoutAPIProvider.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BEAB899F200D84DD0058B120 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BEBEC42920101A2B005E1012 /* PlayViewModel.swift */,
+				BEAB89A0200D84ED0058B120 /* StreamViewModel.swift */,
+				BE4208A1201178C500550EBC /* DownloadViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEAB897A200D7B9A0058B120 /* VideoStreamingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEAB8990200D7B9A0058B120 /* Build configuration list for PBXNativeTarget "VideoStreamingApp" */;
+			buildPhases = (
+				37C183EE3A43D03FBE9037FE /* [CP] Check Pods Manifest.lock */,
+				BEAB8977200D7B9A0058B120 /* Sources */,
+				BEAB8978200D7B9A0058B120 /* Frameworks */,
+				BEAB8979200D7B9A0058B120 /* Resources */,
+				DA8BA66DC378A46E078792F7 /* [CP] Embed Pods Frameworks */,
+				F3CA0DC55EDEA073B4D66F0B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoStreamingApp;
+			productName = VideoStreamingApp;
+			productReference = BEAB897B200D7B9A0058B120 /* VideoStreamingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEAB8973200D7B9A0058B120 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Eitguide;
+				TargetAttributes = {
+					BEAB897A200D7B9A0058B120 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BEAB8976200D7B9A0058B120 /* Build configuration list for PBXProject "VideoStreamingApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEAB8972200D7B9A0058B120;
+			productRefGroup = BEAB897C200D7B9A0058B120 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEAB897A200D7B9A0058B120 /* VideoStreamingApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEAB8979200D7B9A0058B120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAB898C200D7B9A0058B120 /* LaunchScreen.storyboard in Resources */,
+				BEAB8989200D7B9A0058B120 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37C183EE3A43D03FBE9037FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoStreamingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8BA66DC378A46E078792F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VideoStreamingApp/Pods-VideoStreamingApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoStreamingApp/Pods-VideoStreamingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3CA0DC55EDEA073B4D66F0B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoStreamingApp/Pods-VideoStreamingApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEAB8977200D7B9A0058B120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBEC42A20101A2B005E1012 /* PlayViewModel.swift in Sources */,
+				BEAB89A1200D84ED0058B120 /* StreamViewModel.swift in Sources */,
+				BE3C35E6200DA09800CE26F2 /* ErrorViewController.swift in Sources */,
+				BE3C35E2200D9F5600CE26F2 /* Navigator.swift in Sources */,
+				BE3C35DE200D916D00CE26F2 /* Spout.swift in Sources */,
+				BE3C35E0200D94E800CE26F2 /* SpoutAPIProvider.swift in Sources */,
+				BE42089D2010FDE100550EBC /* CMTime.swift in Sources */,
+				BE3C35E4200D9FF700CE26F2 /* PlayViewController.swift in Sources */,
+				BE4208A420117C7E00550EBC /* DownloadCell.swift in Sources */,
+				BE4208A02011754500550EBC /* DownloadManager.swift in Sources */,
+				BEAB8981200D7B9A0058B120 /* ViewController.swift in Sources */,
+				BEBEC428200FB1BC005E1012 /* DownloadViewController.swift in Sources */,
+				BEAB899B200D841E0058B120 /* UIColor.swift in Sources */,
+				BEAB897F200D7B9A0058B120 /* AppDelegate.swift in Sources */,
+				BEAB8987200D7B9A0058B120 /* VideoStreamingApp.xcdatamodeld in Sources */,
+				BE4208A2201178C500550EBC /* DownloadViewModel.swift in Sources */,
+				BEAB8995200D7D770058B120 /* Stream.swift in Sources */,
+				BEAB8998200D82720058B120 /* StreamCell.swift in Sources */,
+				BEBEC42C20101F6A005E1012 /* AVPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BEAB898A200D7B9A0058B120 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEAB898B200D7B9A0058B120 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEAB898E200D7B9A0058B120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEAB898F200D7B9A0058B120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEAB8991200D7B9A0058B120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93FF68116C013B65DBFD50D2 /* Pods-VideoStreamingApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B9F39GBCC;
+				INFOPLIST_FILE = VideoStreamingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eitguide.videostream.VideoStreamingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEAB8992200D7B9A0058B120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817BC223DF3C66F9A9C7828A /* Pods-VideoStreamingApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B9F39GBCC;
+				INFOPLIST_FILE = VideoStreamingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eitguide.videostream.VideoStreamingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEAB8976200D7B9A0058B120 /* Build configuration list for PBXProject "VideoStreamingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAB898E200D7B9A0058B120 /* Debug */,
+				BEAB898F200D7B9A0058B120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEAB8990200D7B9A0058B120 /* Build configuration list for PBXNativeTarget "VideoStreamingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAB8991200D7B9A0058B120 /* Debug */,
+				BEAB8992200D7B9A0058B120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEAB8985200D7B9A0058B120 /* VideoStreamingApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BEAB8986200D7B9A0058B120 /* VideoStreamingApp.xcdatamodel */,
+			);
+			currentVersion = BEAB8986200D7B9A0058B120 /* VideoStreamingApp.xcdatamodel */;
+			path = VideoStreamingApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BEAB8973200D7B9A0058B120 /* Project object */;
+}
