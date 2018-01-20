@@ -117,12 +117,15 @@ extension ViewController: DownloadStreamDidTapDelegate {
     func downloadDidTap(index: Int) {
         print("NghiaNV-\(index)")
         let stream = vm.streams.value[index]
-        print(stream.streamUrl)
-        print(stream.offlineUrl)
+//        DownloadManager.shared.downloadImage(urlImage: URL(string: stream.backgroundImageUrl!)!) {
+//
+//        }
         
-        DownloadManager.shared.downloadFile(url: URL(string: stream.backgroundImageUrl!)!) { (value) in
-            print("NghiaNV-\(value)")
-        }
+//        DownloadManager.shared.downloadFile(url: URL(string: stream.backgroundImageUrl!)!) { (value) in
+//            print("NghiaNV-\(value)")
+//        }
+        
+        
       
         tabBarController?.selectedIndex = 1
     }

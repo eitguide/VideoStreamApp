@@ -13,6 +13,14 @@ class DownloadCell: UICollectionViewCell {
     let thumbStreamImageView = UIImageView()
     let playImageView = UIImageView()
     
+    var stream: Stream? {
+        didSet {
+            if let data = stream {
+                
+            }
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         print("NghiaNV-setupViewDownloadCell")

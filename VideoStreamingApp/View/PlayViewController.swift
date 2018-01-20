@@ -26,6 +26,7 @@ final class PlayViewController: UIViewController {
     private let backButton = UIButton(type: .system)
     
     private let closeButton = UIButton(type: .system)
+    private let isPlayOffline: Bool
     
     let bag = DisposeBag()
     
@@ -33,7 +34,8 @@ final class PlayViewController: UIViewController {
     
     let vm: PlayViewModel
     
-    init(vm: PlayViewModel) {
+    init(vm: PlayViewModel, isPlayOffline: Bool = false) {
+        self.isPlayOffline = isPlayOffline
         self.vm = vm
         super.init(nibName: nil, bundle: nil)
     }
@@ -231,8 +233,13 @@ final class PlayViewController: UIViewController {
                     me.avPlayer.pause()
                 }
                 
-                let url = URL(string: stream.streamUrl ?? "")
-                let playerItem = AVPlayerItem(url: url!)
+                var url: URL
+                if me.isPlayOffline {
+                    url = URL(fileURLWithPath: stream.offlineUrl!)
+                } else {
+                    url = URL(string: stream.streamUrl!)!
+                }
+                let playerItem = AVPlayerItem(url: url)
                 
                 NotificationCenter.default.addObserver(me, selector: #selector(me.itemDidPlayToEndTime), name: Notification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
                 

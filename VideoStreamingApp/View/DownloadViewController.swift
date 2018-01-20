@@ -32,6 +32,7 @@ final class DownloadViewController: UIViewController {
         localize()
         setupView()
         bind()
+        vm.loadData()
     }
     
     func setupView() {
@@ -50,13 +51,10 @@ final class DownloadViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.register(DownloadCell.self, forCellWithReuseIdentifier: DownloadViewController.cellIdentifier)
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        navigationController?.setNavigationBarHidden(false, animated: true)
         localize()
     }
 
@@ -68,7 +66,7 @@ final class DownloadViewController: UIViewController {
     func bind() {
         vm.streams.asObservable().observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] streams in
-                
+                self?.collectionView.reloadData()
             }).disposed(by: bag)
     }
 }
@@ -79,7 +77,7 @@ extension DownloadViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return vm.streams.value.count
     }
     
 
@@ -90,8 +88,17 @@ extension DownloadViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DownloadViewController.cellIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DownloadViewController.cellIdentifier, for: indexPath) as! DownloadCell
+        cell.stream = vm.streams.value[indexPath.row]
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let stream = vm.streams.value[indexPath.row]
+        print(stream.offlineUrl)
+        let playVM = PlayViewModel(streams: vm.streams.value, index: indexPath.row)
+        let playVC = PlayViewController(vm: playVM, isPlayOffline: true)
+        navigationController?.pushViewController(playVC, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -106,7 +113,4 @@ extension DownloadViewController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     }
-    
-    
-    
 }

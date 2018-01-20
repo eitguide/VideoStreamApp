@@ -21,6 +21,7 @@ class DownloadManager {
     private init() {
         
     }
+    
     func downloadFile(url: URL, completeHandler: @escaping ((Bool) -> ())) {
         Alamofire.download(url, to: destination).response { (response) in
             if response.error != nil {
@@ -31,6 +32,13 @@ class DownloadManager {
         }
     }
     
-    func dowloadVideo(urlVideo: URL, completeHandler: ()->() ) {
+    func downloadImage(urlImage: URL, completeHandler: (()->())) {
+        Alamofire.download(urlImage).responseData { (responseData) in
+            if let data = responseData.result.value {
+                let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+                let desFile = documentsURL.appendingPathComponent("nghia.png")
+                try! data.write(to: desFile)
+            }
+        }
     }
 }

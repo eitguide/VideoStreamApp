@@ -23,5 +23,9 @@ class Stream: JSONDecodable {
         self.streamUrl =  "stream_url" <~~ json
         self.offlineUrl =  "offline_url" <~~ json
     }
+    
+    init() {
+        
+    }
 }
 
